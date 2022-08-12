@@ -9,9 +9,9 @@ class Navbar extends Component {
                     <div className="image-text">
                         <div className="image-text">
                             <span className="image">
-                                <a href="/">
-                                <img src={require('./logo.png')} alt=""/>
-                                </a>
+                                <button onClick={(e) => this.props.handler(e, "Main")}>
+                                    <img src={require('./logo.png')} alt=""/>
+                                </button>
                             </span>
                         </div>
                         <div className="text logo-text" > 
@@ -26,23 +26,22 @@ class Navbar extends Component {
                     <div className="menu">
                         <ul className="menu-links">
                             <li className="nav-link"> 
-                                <a href="/"><i className="bi bi-file-person-fill icon"></i>About Me</a>
+                                <button onClick={(e) => this.props.handler(e, "About")}><i className="bi bi-file-person-fill icon"></i>About</button>
                             </li>
                             <li className="nav-link">
-                                <a href="/"><i className="bi bi-box-fill icon"></i>Experience</a>
+                                <button onClick={(e) => this.props.handler(e, "Exp")}><i className="bi bi-box-fill icon"></i>Experience</button>
                             </li>
                             <li className="nav-link" >
-                                <a href="/"><i className="bi bi-mortarboard-fill icon"></i>Education</a>
+                                <button onClick={(e) => this.props.handler(e, "Edu")}><i className="bi bi-mortarboard-fill icon"></i>Education</button>
                             </li>
                             <li className="nav-link" >
-                                <a href="/"><i className="bi bi-journal icon"></i>Projects</a>
+                                <button onClick={(e) => this.props.handler(e, "Proj")}><i className="bi bi-journal icon"></i>Projects</button>
                             </li>
                             <li className="nav-link" >
-                                <a href="/"><i className="bi bi-telephone-fill icon"></i>
-                                <span className="text nav-text">Contact</span></a>
+                                <button onClick={(e) => this.props.handler(e, "Contact")}><i className="bi bi-telephone-fill icon"></i>Contact</button>
                             </li>
                             <li className="nav-link" >
-                                <a href="/"><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
+                                <a href={require('./resume.pdf')} onClick={(e) => this.props.handler(e, "Exp")}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
                             </li>
                         </ul>
                     </div>
@@ -57,7 +56,6 @@ class Navbar extends Component {
         sidebar.classList.toggle("close");
     }
 }
-
 
 
 export default Navbar;
