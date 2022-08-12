@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 class Test extends Component {
     render() { 
         return (
-        <div>
+        <div class="container">
             <h1> Hello World</h1>
             <button type="button" class="btn btn-primary">Increment</button>
-            </div>
+            
+        </div>
             );
     }
 }
