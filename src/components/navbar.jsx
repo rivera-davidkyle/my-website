@@ -1,9 +1,10 @@
 import React, { Component, useRef } from 'react'
 
 class Navbar extends Component {
+ 
     render() { 
         return (      
-            <nav className="sidebar">
+            <nav className="sidebar close">
                 <header>
                     <div className="image-text">
                         <div className="image-text">
@@ -19,7 +20,7 @@ class Navbar extends Component {
                         </div>
                     </div>
                         
-                    <i className="bi bi-caret-right-fill toggle"></i>
+                    <i className="bi bi-caret-right-fill toggle" onClick={this.toggleBar}></i>
                 </header>
                 <div className="menu-bar">
                     <div className="menu">
@@ -49,6 +50,14 @@ class Navbar extends Component {
             </nav>
         );
     }
+    toggleBar() {
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector('.toggle');
+        sidebar.classList.toggle("close");
+    }
 }
- 
+
+
+
 export default Navbar;

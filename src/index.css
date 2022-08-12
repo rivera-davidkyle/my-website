@@ -106,6 +106,7 @@ body.dark .sidebar header .toggle{
   width: 250px;
   padding: 10px 14px;
   position: fixed;
+  transition: var(--tran-05);
   background-color: rgb(42, 44, 80);
   z-index: 100;
 }
@@ -128,6 +129,10 @@ body.dark .sidebar header .toggle{
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
+}
+.sidebar .text,
+.sidebar .icon{
+    transition: var(--tran-03);
 }
 .sidebar.close .text{
     opacity: 0;
@@ -180,7 +185,14 @@ body.dark .sidebar header .toggle{
   display: none;
 }
 
-
+.toggle-switch .switch{
+  position: relative;
+  height: 22px;
+  width: 40px;
+  border-radius: 25px;
+  background-color: var(--toggle-color);
+  transition: var(--tran-05);
+}
 .switch::before{
   content: '';
   position: absolute;
