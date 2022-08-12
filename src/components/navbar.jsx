@@ -1,4 +1,5 @@
 import React, { Component, useRef } from 'react'
+import '../static/css/navbar.css';
 
 class Navbar extends Component {
  
@@ -10,13 +11,12 @@ class Navbar extends Component {
                         <div className="image-text">
                             <span className="image">
                                 <button onClick={(e) => this.props.handler(e, "Main")}>
-                                    <img src={require('./logo.png')} alt=""/>
+                                    <img src={require('../static/images/logo.png')} alt=""/>
                                 </button>
                             </span>
                         </div>
                         <div className="text logo-text" > 
                             <span className="name">Kyle Rivera</span>
-                            <span className="profession">Software Engineer</span>
                         </div>
                     </div>
                         
@@ -41,7 +41,7 @@ class Navbar extends Component {
                                 <button onClick={(e) => this.props.handler(e, "Contact")}><i className="bi bi-telephone-fill icon"></i>Contact</button>
                             </li>
                             <li className="nav-link" >
-                                <a href={require('./resume.pdf')} onClick={(e) => this.props.handler(e, "Exp")}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
+                                <a href={require('../static/others/resume.pdf')}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
                             </li>
                         </ul>
                     </div>
