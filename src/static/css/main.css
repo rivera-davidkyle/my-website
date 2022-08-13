@@ -25,12 +25,14 @@
     color:rgb(77, 77, 77);
     animation: text-pop-up-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
+  .page .intimage {
+        position: absolute;
+        left: 950px;
+        margin-top: 150px;
+  }
   .page .main img{
-    float: right;
-    height: 512px;
-    width: 512px;
-    margin-right: 200px;
-    margin-top: 180px;
+    height: 600px;
+    width: 600px;
     animation: tilt-in-br 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
   }

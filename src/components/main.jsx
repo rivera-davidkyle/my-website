@@ -13,8 +13,10 @@ class Main extends Component {
                         <h1>Programmer</h1>
                         <h2> Software Engineer | Web Developer </h2>
                     </div>
+                    <div className='intimage'>
+                        <img src={require('../static/images/logoT.png')} alt=''></img>
+                    </div>
                     
-                    <img src={require('../static/images/logoT.png')} alt=''></img>
                 </div>
             </div>
         );
