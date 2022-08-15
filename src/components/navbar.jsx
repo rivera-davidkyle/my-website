@@ -10,7 +10,7 @@ class Navbar extends Component {
                     <div className="image-text">
                         <div className="image-text">
                             <span className="image">
-                                <button onClick={(e) => this.props.handler(e, "Main")}>
+                                <button onClick={(e) => {this.props.handler(e, "Main");this.toggleClose()}}>
                                     <img src={require('../static/images/logo.png')} alt=""/>
                                 </button>
                             </span>
@@ -26,19 +26,16 @@ class Navbar extends Component {
                     <div className="menu">
                         <ul className="menu-links">
                             <li className="nav-link"> 
-                                <button onClick={(e) => this.props.handler(e, "About")}><i className="bi bi-file-person-fill icon"></i>About</button>
+                                <button onClick={(e) => {this.props.handler(e, "About");this.toggleClose()}}><i className="bi bi-file-person-fill icon"></i>About</button>
                             </li>
                             <li className="nav-link">
-                                <button onClick={(e) => this.props.handler(e, "Exp")}><i className="bi bi-box-fill icon"></i>Experience</button>
+                                <button onClick={(e) => {this.props.handler(e, "Exp");this.toggleClose()}}><i className="bi bi-box-fill icon"></i>Experience</button>
                             </li>
                             <li className="nav-link" >
-                                <button onClick={(e) => this.props.handler(e, "Edu")}><i className="bi bi-mortarboard-fill icon"></i>Education</button>
+                                <button onClick={(e) => {this.props.handler(e, "Proj");this.toggleClose()}}><i className="bi bi-journal icon"></i>Projects</button>
                             </li>
                             <li className="nav-link" >
-                                <button onClick={(e) => this.props.handler(e, "Proj")}><i className="bi bi-journal icon"></i>Projects</button>
-                            </li>
-                            <li className="nav-link" >
-                                <button onClick={(e) => this.props.handler(e, "Contact")}><i className="bi bi-telephone-fill icon"></i>Contact</button>
+                                <button onClick={(e) => {this.props.handler(e, "Contact");this.toggleClose()}}><i className="bi bi-telephone-fill icon"></i>Contact</button>
                             </li>
                             <li className="nav-link" >
                                 <a href={require('../static/others/resume.pdf')}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
@@ -54,6 +51,15 @@ class Navbar extends Component {
         sidebar = body.querySelector('nav'),
         toggle = body.querySelector('.toggle');
         sidebar.classList.toggle("close");
+    }
+    toggleClose(){
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector('.toggle');
+        if (!sidebar.classList.contains('close'))
+        {
+            sidebar.classList.toggle("close")
+        }
     }
 }
 

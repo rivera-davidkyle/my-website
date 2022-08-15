@@ -1,0 +1,53 @@
+.page .exp1{
+    background-color: rgb(42, 44, 80);
+    height:400px;
+    width: 900px;
+    border-style: inset;
+    border-left: 0;
+    border-width: 10px;
+    border-color: rgb(129, 101, 255);
+    margin-top: 75px;
+}
+.page .exp1 .title{
+    display: flex;
+    margin-top: 10px;
+    color:white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.page .exp1 .body
+{
+    height: 400px;
+    overflow: hidden;
+}
+.page .exp1 .body .desc
+{
+    background-color: black;
+    width: 300px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 20px;
+}
+
+.page .exp1 .image{
+    float: right;
+    margin-right: 50px;
+    background-color: gray;
+    width: 300px;
+}
+.page .exp1 .image img{
+    height: 300px;
+}
+.page .exp2{
+    background-color: rgb(42, 44, 80);
+    float: right;
+    height: 400px;
+    width: 900px;
+    border-style: inset;
+    border-right: 0;
+    border-width: 10px;
+    border-color: rgb(129, 101, 255);
+    margin-top: 25px;
+}

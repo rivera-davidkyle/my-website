@@ -7,6 +7,21 @@ import Edu from './components/edu'
 import Proj from './components/proj'
 import Contact from './components/contact'
 import Navbar from './components/navbar'
+import { ThemeProvider, createTheme } from '@mui/material';
+
+const theme = createTheme();
+
+theme.typography = {
+  fontFamily: ['Poppins', 'sans-serif']
+}
+theme.typography.h4 = {
+  fontSize: '2rem',
+  color: 'rgb(42, 44, 80)',
+}
+theme.typography.h3 = {
+  fontSize: '1.3rem',
+  color: 'rgb(79, 82, 131)'
+}
 
 const PAGES = {
   "Main": <Main />,
@@ -33,8 +48,10 @@ class App extends Component {
   render() {
     return (
       <div className ="App">
-        <Navbar handler={this.handler}/>
-        {PAGES[this.state.active]}
+        <ThemeProvider theme={theme}>
+          <Navbar handler={this.handler}/>
+            {PAGES[this.state.active]}
+        </ThemeProvider>
       </div>  
   );
 }

@@ -97,11 +97,13 @@
     transition: var(--tran-05);
     background-color: rgb(42, 44, 80);
     z-index: 100;
+
   }
   .sidebar.close
   {
     width: 88px;
   }
+  
   .sidebar header .image,
   .sidebar .icon{
     min-width: 60px;
@@ -203,14 +205,13 @@
   .page{
     position: absolute;
     top: 0;
-    top: 0;
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
-    animation: fadein 2s;
-    
+    animation: fadein 0.3s;
+    overflow: hidden;
   }
   
   
@@ -219,4 +220,44 @@
     height: 100vh;
     padding-left: 10px;
     width: calc(100% - 78px);
+  }
+
+  @media (max-width: 1200px)
+  {
+
+    .sidebar header .image{
+      padding-right: 10px;
+    }
+    .sidebar header .logo-text{
+      text-align: right;
+    }
+    .sidebar{
+      width: 200px;
+    }
+    .sidebar.close {
+        width:81px;
+        height: 70px;
+        border-radius: 0px 0px 10px 0px;
+        position: absolute;
+        z-index: 1;
+    }
+    .page{
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      transition: none;
+      overflow: scroll;
+      animation: fadein 0.3s;
+      
+      
+    }
+    .sidebar.close ~ .page{
+      left: 0;
+      height: 100vh;
+      padding: 0;
+      width: 100%;
+    }
   }
