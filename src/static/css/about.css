@@ -1,0 +1,19 @@
+@media (max-width: 1366px)
+{
+        .page img.about {
+                height: 40vh;
+                max-height: 400px;
+        }
+}
+@media (min-width: 1400px)
+{
+        .page img.about {
+                height: 35vh;
+                max-height: 550px;
+        }
+}
+.page img.about {
+        height: 35vh;
+        max-height: 400px;;
+}
+
