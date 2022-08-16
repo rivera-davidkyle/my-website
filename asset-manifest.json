@@ -1,20 +1,36 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.acddf54d.css",
-    "main.js": "/my-website/static/js/main.5ae16c6e.js",
+    "main.css": "/my-website/static/css/main.99e7764b.css",
+    "main.js": "/my-website/static/js/main.eeecf26c.js",
     "static/js/787.bbe01249.chunk.js": "/my-website/static/js/787.bbe01249.chunk.js",
     "static/media/pfp.png": "/my-website/static/media/pfp.0def3d967bdcc5f24aaa.png",
+    "static/media/ucnpage.png": "/my-website/static/media/ucnpage.a181b09f514e19a67e4e.png",
+    "static/media/ucn.png": "/my-website/static/media/ucn.615b45987927787b2cc0.png",
     "static/media/alg.png": "/my-website/static/media/alg.0fd3ce774346f41b1445.png",
+    "static/media/sort.png": "/my-website/static/media/sort.76cbc1169d254f8413f3.png",
+    "static/media/sklearn.png": "/my-website/static/media/sklearn.bfb987221ae5f83d782b.png",
+    "static/media/ubuntu.png": "/my-website/static/media/ubuntu.d6517e879034b87fb6d6.png",
+    "static/media/cplus.png": "/my-website/static/media/cplus.5185ce2f4c945505ee4f.png",
+    "static/media/matlab.png": "/my-website/static/media/matlab.2b608e94f8e1c2c9cd8e.png",
+    "static/media/jupyter.png": "/my-website/static/media/jupyter.e0e612fd290b62ecd44a.png",
+    "static/media/port.png": "/my-website/static/media/port.6bcd32779ec4b328f11e.png",
     "static/media/resume.pdf": "/my-website/static/media/resume.a4b88fe3a93d697d629a.pdf",
+    "static/media/umbc.png": "/my-website/static/media/umbc.c68b5c0cce794d35ebfc.png",
+    "static/media/itw.png": "/my-website/static/media/itw.1fb53ca764009ca29794.png",
+    "static/media/django.png": "/my-website/static/media/django.a5aaa412df3c52f5f6bf.png",
+    "static/media/reactjs.png": "/my-website/static/media/reactjs.20adfb35ae6a6e5817bf.png",
+    "static/media/css.png": "/my-website/static/media/css.84de5dab5fab27f4161c.png",
     "static/media/logo.png": "/my-website/static/media/logo.a6a51d6257317dd3e222.png",
+    "static/media/numpy.png": "/my-website/static/media/numpy.9eca1f7a4f09a8c742fd.png",
     "static/media/logoT.png": "/my-website/static/media/logoT.4fa69979ad2b22d9ba3c.png",
+    "static/media/bootstrap.png": "/my-website/static/media/bootstrap.268c4375260420e8d982.png",
     "index.html": "/my-website/index.html",
-    "main.acddf54d.css.map": "/my-website/static/css/main.acddf54d.css.map",
-    "main.5ae16c6e.js.map": "/my-website/static/js/main.5ae16c6e.js.map",
+    "main.99e7764b.css.map": "/my-website/static/css/main.99e7764b.css.map",
+    "main.eeecf26c.js.map": "/my-website/static/js/main.eeecf26c.js.map",
     "787.bbe01249.chunk.js.map": "/my-website/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acddf54d.css",
-    "static/js/main.5ae16c6e.js"
+    "static/css/main.99e7764b.css",
+    "static/js/main.eeecf26c.js"
   ]
 }
