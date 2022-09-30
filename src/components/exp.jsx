@@ -9,19 +9,26 @@ import reactjs from '../static/images/reactjs.png';
 import cplus from '../static/images/cplus.png';
 import python from '../static/images/python.png';
 import git from '../static/images/git.png';
+import atl from '../static/images/atl.png';
 import ubuntu from '../static/images/ubuntu.png';
+import redis from '../static/images/redis.png';
+import pg from '../static/images/pg.png';
+import docker from '../static/images/docker.png';
+import html from '../static/images/html.png';
+import cs from '../static/images/css.png';
+import js from '../static/images/js.png';
 
 const cardEffect = keyframes`
 0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
     opacity: 0;
-  }
-  100% {
+}
+100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-  }
+}
 `
 
 class Exp extends Component {
@@ -58,31 +65,54 @@ class Exp extends Component {
                         <Typography variant="h3" align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"2.4vh", fontWeight:"900"}}>
                             Roles:
                         </Typography>
-                        <Typography align="center" sx={{fontSize:"2.1vh", fontWeight:"5"}}>
-                        Maintain and improve a microservices architecture given loosely defined customer requirements with
-                        Django Framework, Redis, Celery, and Docker <br></br>
-                        Follow a directive through organized team sprints and a timeline based on given requirements
-                        through CI/CD and Github<br></br>
-                        Developed an SMTP that periodically reaches out to more than 100 researchers through Celery and
-                        Redis<br></br>
-                        Developed a download feature that lets users access more than 1000 daily files through Django
-                        REST Framework, with JQuery and Bootstrap used for the front-end<br></br>
-
+                        <Typography align="center" sx={{fontSize:"2.1vh", fontWeight:"5", width:"auto"}}>
+                            As a developer for ALG, we maintain and improve a microservices architecture given loosely <br></br>
+                            defined customer requirements with Django Framework, Redis, Celery, and Docker. We follow <br></br>
+                            a directive through organized team sprints and a timeline based on given requirements <br></br>
+                            through CI/CD and Github.<br></br><br></br>
+                            So far I have developed an SMTP that periodically reaches out to more than 100 researchers <br></br>
+                            through Celery and Redis. Also, I have developed a download feature that lets users access <br></br>
+                            more than 5000 daily files within each ceilometer site, utilizing Django REST Framework <br></br>
+                            and Redis, with JQuery and Bootstrap used for the frontend<br></br>
+                            
                         </Typography>
                     </Paper>
                     <Paper elevation={12} sx={{padding: "20px"}}>
-                    <Typography variant="h2" align="center">
+                    <Typography variant="h2" align="center" sx={{padding:"10px"}}>
                         Experienced with
+                    </Typography>
+                    <Typography variant="h3" align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"2.4vh", fontWeight:"900", padding:"5px"}}>
+                        OOP Languages
+                    </Typography>
+                    <Container sx={{display:"flex", justifyContent:"center", paddingLeft:"30px"}}>
+                        <img className="logo" src={python} alt=""></img>
+                        <img className="logo" src={cplus} alt=""></img>
+                    </Container>
+                    <Typography variant="h3" align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"2.4vh", fontWeight:"900", padding:"5px"}}>
+                        Backend
                     </Typography>
                     <Container sx={{display:"inline-block", justifyContent:"center", paddingLeft:"30px"}}>
                         <img className="logo" src={django} alt=""></img>
-                        <img className="logo" src={reactjs} alt=""></img>
-                        <img className="logo" src={python} alt=""></img>
-                        <img className="logo" src={cplus} alt=""></img>
-                        <img className="logo" src={git} alt=""></img>
-                        <img className="logo" src={ubuntu} alt=""></img>
+                        <img className="logo" src={pg} alt=""></img>
+                        <img className="logo" src={redis} alt=""></img>
+                        <img className="logo" src={docker} alt=""></img>
                     </Container>
-                        
+                    <Typography variant="h3" align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"2.4vh", fontWeight:"900", padding:"5px"}}>
+                        Frontend
+                    </Typography>
+                    <Container sx={{display:"inline-block", justifyContent:"center", paddingLeft:"30px"}}>
+                        <img className="logo" src={html} alt=""></img>
+                        <img className="logo" src={cs} alt=""></img>
+                        <img className="logo" src={js} alt=""></img>
+                        <img className="logo" src={reactjs} alt=""></img>
+                    </Container>
+                    <Typography variant="h3" align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"2.4vh", fontWeight:"900", padding:"5px"}}>
+                        CI/CD
+                    </Typography>
+                    <Container sx={{display:"flex", justifyContent:"center", paddingLeft:"30px"}}>
+                        <img className="logo" src={git} alt=""></img>
+                        <img className="logo" src={atl} alt=""></img>
+                    </Container>
                     </Paper>
                 </Box>
             </div>
