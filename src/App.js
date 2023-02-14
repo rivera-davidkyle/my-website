@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import Main from './components/main'
 import About from './components/about'
 import Exp from './components/exp'
-import Edu from './components/edu'
 import Proj from './components/proj'
 import Contact from './components/contact'
 import Navbar from './components/navbar'
@@ -27,7 +26,6 @@ const PAGES = {
   "Main": <Main />,
   "About": <About />,
   "Exp": <Exp />,
-  "Edu": <Edu />,
   "Proj": <Proj />,
   "Contact": <Contact />
 }

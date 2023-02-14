@@ -33,6 +33,8 @@ class About extends Component {
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     padding: "77px",
+                    overflow: "auto",
+                    maxHeight: "100%",
                     "& > :not(style)": {
                         m: 1,
                         width: "auto",
@@ -46,7 +48,7 @@ class About extends Component {
                 <Paper elevation={12} sx={{padding: "20px"}}>  
                     <Box
                     sx={{
-                        height: "60px",
+                        height: "auto",
                         display: "flex",
                         justifyContent: "center"
                     }}>
@@ -54,18 +56,18 @@ class About extends Component {
                         sx={{
                             textAlign:"center",
                             fontWeight: "500",
-                            fontSize: "2.6vh",
-                            color: "white"
-                            }}>
-                        I am a&nbsp;
-                        </Typography>
-                        <Typography variant="h1"
-                        sx={{
-                            textAlign:"center",
-                            fontWeight: "500",
-                            fontSize: "2.6vh",
+                            fontSize: "auto",
                             color: "rgb(129, 101, 255)"
-                            }}>
+                            }}><Typography variant="h1"
+                            sx={{
+                                textAlign:"center",
+                                fontWeight: "500",
+                                fontSize: "auto",
+                                color: "white"
+                                }}>
+                                Hi! I'm Kyle Rivera,&nbsp;
+                            </Typography>
+                                
                             <Typewriter
                             options={{
                             loop: true
@@ -95,26 +97,36 @@ class About extends Component {
                     }}>
                         <img src={pfp} alt="" className='about'></img>
                     </Container>
-                    <Container>
-                    <Typography variant="p"
+                    <Container maxWidth="md">
+                    <Typography align="center"
                     sx={{
-                        fontSize: "2.1vh",
+                        fontSize: "auto",
                         fontWeight: "5",
+                        width:"auto"
                     }}>
                     <br></br>
-                            I am a senior majoring in Computer Science at the University of
+                            I am a senior majoring in Computer Science with a minor in Staistics at the University of
                             Maryland, Baltimore County. I work for the Atmospheric Lidar Group,
                             where we provide and maintain a microservices architecture based on loosely
                             defined client requirements. <br></br><br></br>
 
 
-                            I seek out challenges to expand my skillset and knowledge, and I adapt well
-                            to new roles and environments. <br></br><br></br>
+                            In addition to my technical skills and work experience, I seek out challenges to 
+                            expand my skillset and knowledge, and I adapt well to new roles and environments. 
+                            I enjoy taking on new projects that push me out of my comfort zone, and I thrive in fast-paced,
+                             dynamic environments where I can apply my problem-solving skills. 
+                              I'm confident in my ability to adapt to new roles and environments, 
+                              and I'm excited about the prospect of taking on new challenges in my career as a software developer. <br></br><br></br>
 
 
-                            Outside of programming, I am a basketball player, a chess enthusiast, with an
-                            ardent passion for music. Above everything else, my ambitions lie on partaking
-                            with the world's quest for technological growth and progress. <br></br>
+                            Outside of programming, I am a Culture Chair and an executive board member of Filipino-American
+                            Student Association where I provide counsel and organize events about the Filipino
+                            culture. I also had experiences volunteering in HackUMBC, a hackathon in my university. <br></br><br></br>
+                            
+
+                            Above everything else, I'm passionate about computer science 
+                            and its potential to make a positive impact on the world. 
+                            I'm looking forward to putting my skills to use and continuing to grow as a software developer. <br></br><br></br>
                     </Typography>
                     </Container>
                 </Paper>

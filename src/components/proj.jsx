@@ -46,14 +46,15 @@ class Proj extends Component {
                     paddingTop: "77px",
                     flexWrap: "wrap",
                     overflow: 'auto',
+                    width: "auto",
                     maxHeight: '100%', animation:`${listEffect} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` 
                 }}>
                 
-                <List sx={{display:"inline",color:"white", width: "auto"}}>
+                <List sx={{display:"inline",color:"white", width: "75%"}}>
                     <ListItemButton href="https://www.ucn-portal.org/"
-                    sx={{background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px", m:"10px"}}>
+                    sx={{background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px", m:"10px", width:"auto"}}>
                         <ListItemText>
-                            <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
+                            <Typography align="center" sx={{fontWeight:"50", fontSize:"auto"}}>
                                 Unified Ceilometer Network
                             </Typography>
                             
