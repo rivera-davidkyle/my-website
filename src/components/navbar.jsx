@@ -20,7 +20,7 @@ class Navbar extends Component {
                         </div>
                     </div>
                         
-                    <i className="bi bi-caret-right-fill toggle" onClick={this.toggleBar}></i>
+                    <i className="bi bi-caret-right-fill toggle" onClick={(e) => this.toggleBar(e)}></i>
                 </header>
                 <div className="menu-bar">
                     <div className="menu">
