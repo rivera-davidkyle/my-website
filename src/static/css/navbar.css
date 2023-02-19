@@ -236,7 +236,7 @@
         width:81px;
         height: 70px;
         border-radius: 0px 0px 10px 0px;
-        position: absolute;
+        position: fixed;
         z-index: 1;
     }
     .page{

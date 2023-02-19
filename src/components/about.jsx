@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, forwardRef } from 'react';
 import Typewriter from 'typewriter-effect';
 import pfp from '../static/images/pfp.png';
 import { Paper, Typography, Container, Box } from '@mui/material';
@@ -25,7 +25,7 @@ const cardEffect = keyframes`
 class About extends Component {
     render() { 
         return (
-        <div className="page">
+        <div className="page" ref={this.props.aboutRef}>
             <Box
                 sx={{
                     display: 'flex',
@@ -131,4 +131,4 @@ class About extends Component {
     }
 }
  
-export default About;
+export default forwardRef((props,ref) => <About aboutRef={ref} {...props}/>);

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, forwardRef } from 'react';
 import { List, ListItemButton, ListItemText, Box, Typography, Divider, Container,Paper } from '@mui/material';
 import { keyframes } from '@emotion/react';
 
@@ -38,7 +38,7 @@ class Proj extends Component {
     state = {  } 
     render() { 
         return (
-            <div className="page">
+            <div className="page" ref={this.props.projRef}>
                 <Box
                 sx={{
                     display:"flex",
@@ -50,9 +50,16 @@ class Proj extends Component {
                     maxHeight: '100%', animation:`${listEffect} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` 
                 }}>
                 
-                <List sx={{display:"inline",color:"white", width: "75%"}}>
+                <List sx={{display:"block",color:"white", width: "75%"}}>
                     <ListItemButton href="https://www.ucn-portal.org/"
-                    sx={{background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px", m:"10px", width:"auto"}}>
+                    sx={{background:"rgb(42, 44, 80)", 
+                    display:"grid", 
+                    justifyContent:"center", 
+                    border:"solid rgb(129, 101, 255) 5px", 
+                    m:"10px", 
+                    width:"auto",
+                    width: "30vw"
+                    }}>
                         <ListItemText>
                             <Typography align="center" sx={{fontWeight:"50", fontSize:"auto"}}>
                                 Unified Ceilometer Network
@@ -76,7 +83,7 @@ class Proj extends Component {
                     </ListItemButton>
                     <Divider/>
                     <ListItemButton href="https://ticketingitapp.herokuapp.com/"
-                    sx={{background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px", m:"10px"}}>
+                    sx={{background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px", m:"10px", width: "100px"}}>
                         <ListItemText>
                             <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
                                 IT Ticketing Website
@@ -160,4 +167,4 @@ class Proj extends Component {
     }
 }
  
-export default Proj;
+export default forwardRef((props, ref) =>  <Proj projRef={ref} {...props}/>);

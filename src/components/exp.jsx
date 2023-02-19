@@ -54,14 +54,13 @@ class Exp extends Component {
     state = {  } 
     render() { 
         return (
-            <div className="page">
+            <div className="page" ref={this.props.expRef}>
                 <Box
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     padding: "77px",
-                    overflow: "auto",
                     maxHeight: "100%",
                     "& > :not(style)": {
                         m: 1,
@@ -105,7 +104,7 @@ class Exp extends Component {
                         </Container>
                     </Paper>
                     <Paper elevation={12} sx={{padding: "20px"}}>
-                        <Container>
+                        <Container maxWidth="md">
                             <Typography variant="h2" align="center" sx={{padding:"10px"}}>
                                 Experienced with
                             </Typography>
@@ -151,4 +150,4 @@ class Exp extends Component {
     }
 }
  
-export default Exp;
+export default forwardRef((props,ref) => <Exp expRef={ref} {...props}/>);

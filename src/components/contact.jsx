@@ -24,7 +24,7 @@ class Contact extends Component {
     state = {  } 
     render() { 
         return (
-            <div className="page">
+            <div className="page" ref={this.props.contactRef}>
               
                 <Box sx={{
                     height: "100vh",
@@ -67,4 +67,4 @@ class Contact extends Component {
     }
 }
  
-export default Contact;
+export default forwardRef((props, ref) =>  <Contact contactRef={ref} {...props}/>);

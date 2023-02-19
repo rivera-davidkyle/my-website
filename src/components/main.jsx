@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, forwardRef } from 'react'
 import { Typography, useTheme, Grid } from '@mui/material';
 import { css, keyframes } from '@emotion/react'
 import logo from '../static/images/logoT.png'
@@ -36,7 +36,7 @@ const logoEffect = keyframes`
 class Main extends Component {
     render() { 
         return (
-            <div className='page'>
+            <div className='page' ref={this.props.mainRef}>
                 <Grid
                 container
                 spacing={0}
@@ -73,4 +73,4 @@ class Main extends Component {
     }
 }
  
-export default Main;
+export default forwardRef((props,ref) => <Main mainRef={ref} {...props}/>);

@@ -54,13 +54,11 @@ class App extends Component {
           onProjClick={() => this.scrollToMyRef(this.projRef)}
           onContactClick={() => this.scrollToMyRef(this.contactRef)} 
           />
-          <Main />
+          <Main ref={this.mainRef}/>
           <About ref={this.aboutRef}/>
-          <Exp />
-          <Proj />
-          <div ref={this.contactRef}>
-            <Contact />
-          </div>
+          <Exp ref={this.expRef}/>
+          <Proj ref={this.projRef}/>
+          <Contact ref={this.contactRef}/>
         </ThemeProvider>
       </div>  
     );
