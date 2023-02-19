@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, forwardRef } from 'react';
 import { List, ListItemButton, ListItemText, Box, Typography, Divider, Container, Paper, Grid } from '@mui/material';
 import {ListItemIcon} from '@mui/material';
 import { LinkedIn, GitHub, Email } from '@mui/icons-material';

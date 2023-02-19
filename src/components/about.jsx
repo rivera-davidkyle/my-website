@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import pfp from '../static/images/pfp.png';
 import { Paper, Typography, Container, Box } from '@mui/material';
-import { css, keyframes } from '@emotion/react';
-import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 import '../static/css/about.css';
 
 
@@ -33,12 +32,9 @@ class About extends Component {
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     padding: "77px",
-                    overflow: "auto",
-                    maxHeight: "100%",
                     "& > :not(style)": {
                         m: 1,
                         width: "auto",
-                        height: "auto",
                         border: "inset rgb(129, 101, 255) 10px",
                         background: "rgb(42, 44, 80)",
                         color: "white",
@@ -48,7 +44,6 @@ class About extends Component {
                 <Paper elevation={12} sx={{padding: "20px"}}>  
                     <Box
                     sx={{
-                        height: "auto",
                         display: "flex",
                         justifyContent: "center"
                     }}>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, forwardRef } from 'react';
 import { Paper, Box, Typography, Container, autocompleteClasses} from '@mui/material';
 import alg from '../static/images/alg.png'
 import algp from '../static/images/alg_p.png'

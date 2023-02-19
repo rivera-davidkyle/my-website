@@ -31,28 +31,40 @@ const PAGES = {
 }
 
 class App extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props);
-    this.handler = this.handler.bind(this);
-    this.state = {
-      active: "Main"
-    }
+    this.mainRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.expRef = React.createRef();
+    this.projRef = React.createRef();
+    this.contactRef = React.createRef();
   }
-  handler(e,view)
-  {
-    this.setState({active: view});
+
+  scrollToMyRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   }
   render() {
     return (
       <div className ="App">
         <ThemeProvider theme={theme}>
-          <Navbar handler={this.handler}/>
-            {PAGES[this.state.active]}
+          <Navbar
+          onMainClick={() => this.scrollToMyRef(this.mainRef)}
+          onAboutClick={() => this.scrollToMyRef(this.aboutRef)}
+          onExpClick={() => this.scrollToMyRef(this.expRef)}
+          onProjClick={() => this.scrollToMyRef(this.projRef)}
+          onContactClick={() => this.scrollToMyRef(this.contactRef)} 
+          />
+          <Main />
+          <About ref={this.aboutRef}/>
+          <Exp />
+          <Proj />
+          <div ref={this.contactRef}>
+            <Contact />
+          </div>
         </ThemeProvider>
       </div>  
-  );
-}
+    );
+  }
 }
 
 export default App;
