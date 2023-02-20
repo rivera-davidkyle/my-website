@@ -247,7 +247,7 @@
       width: 100%;
       background-color: var(--body-color);
       transition: none;
-      overflow: auto;
+      overflow: hidden;
       animation: fadein 0.3s;
       
       

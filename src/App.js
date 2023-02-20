@@ -13,22 +13,6 @@ const theme = createTheme();
 theme.typography = {
   fontFamily: ['Poppins', 'sans-serif']
 }
-theme.typography.h4 = {
-  fontSize: '2rem',
-  color: 'rgb(42, 44, 80)',
-}
-theme.typography.h3 = {
-  fontSize: '1.3rem',
-  color: 'rgb(79, 82, 131)'
-}
-
-const PAGES = {
-  "Main": <Main />,
-  "About": <About />,
-  "Exp": <Exp />,
-  "Proj": <Proj />,
-  "Contact": <Contact />
-}
 
 class App extends Component {
   constructor(props) {
