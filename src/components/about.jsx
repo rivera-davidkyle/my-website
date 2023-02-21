@@ -77,7 +77,7 @@ class About extends Component {
                     }}>
                         <img src={pfp} alt="" className='about'></img>
                     </Container>
-                    <Container maxWidth="md">
+                    <Container maxWidth="sm">
                     <Typography align="center"
                     sx={{
                         fontSize: "auto",
@@ -87,20 +87,16 @@ class About extends Component {
                     <br></br>
                             I am a senior majoring in Computer Science with a minor in Staistics at the University of
                             Maryland, Baltimore County. I enjoy topics that revolve around Algorithms, Data Structures, and
-                            Data Science. <br></br><br></br>
-
-
-                            In addition to my technical skills and work experience, I seek out challenges to 
-                            expand my skillset and knowledge, and I adapt well to new roles and environments. 
+                            Data Science.  I seek out challenges to expand my skillset and knowledge, and I adapt well to new roles and environments. 
                             I enjoy taking on new projects that push me out of my comfort zone, and I thrive in fast-paced,
                             dynamic environments where I can apply my problem-solving skills. 
-                            I'm confident in my ability to adapt to new roles and environments, 
-                            and I'm excited about the prospect of taking on new challenges in my career as a software developer. <br></br><br></br>
+                            <br></br><br></br>
 
 
-                            Outside of programming, I am a Culture Chair and an executive board member of Filipino-American
-                            Student Association where I provide counsel and organize events about the Filipino
-                            culture. I also had experiences volunteering in HackUMBC, a hackathon in my university. <br></br><br></br>
+                            I'm involved in several other activities outside of programming. As Culture Chair for the 
+                            Filipino-American Student Association, I guide the executive board and organize cultural 
+                            events. I'm also an organizer for HackUMBC, where I promote and moderate the event. 
+                            Outside of my leadership roles, I enjoy playing music, chess, and basketball.<br></br><br></br>
                             
 
                             Above everything else, I'm passionate about computer science 

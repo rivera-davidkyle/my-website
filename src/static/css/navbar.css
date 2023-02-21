@@ -168,6 +168,9 @@
   .sidebar .menu{
     margin-top: 40px;
   }
+  .sidebar .dock{
+    margin-top: 25px;
+  }
   
   .sidebar .menu-bar{
     height: calc(100% - 55px);
@@ -213,13 +216,16 @@
     overflow: auto;
   }
   
-  
   .sidebar.close ~ .page{
     left: 78px;
     padding-left: 10px;
     width: calc(100% - 78px);
   }
 
+  .dock .nav-link{
+    height: 30px;
+    font-size: 0.70rem;
+  }
   @media (max-width: 1200px)
   {
 

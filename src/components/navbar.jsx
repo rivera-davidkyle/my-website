@@ -1,4 +1,5 @@
-import React, { Component, useRef } from 'react'
+import React, { Component } from 'react'
+import { LinkedIn, GitHub, Email } from '@mui/icons-material';
 import '../static/css/navbar.css';
 
 class Navbar extends Component {
@@ -39,6 +40,19 @@ class Navbar extends Component {
                             </li>
                             <li className="nav-link" >
                                 <a href={require('../static/others/resume.pdf')}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="dock">
+                        <ul className="menu-links">
+                            <li className="nav-link">
+                                <a href="https://www.linkedin.com/in/david-kyle-rivera-897824173/"><i className="bi bi-linkedin icon"></i>david-kyle-rivera</a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="https://github.com/rivera-davidkyle"><i className="bi bi-github icon"></i>rivera-davidkyle</a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="mailto:rivera.davidkyle@gmail.com"><i className="bi bi-envelope icon"></i>rivera.davidkyle@gmail.com</a>
                             </li>
                         </ul>
                     </div>

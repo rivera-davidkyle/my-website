@@ -1,5 +1,5 @@
 import React, { Component, forwardRef } from 'react';
-import { Paper, Box, Typography, Container, autocompleteClasses} from '@mui/material';
+import { Paper, Box, Typography, Container } from '@mui/material';
 import '../static/css/exp.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import alg from '../static/images/alg.png'
@@ -70,14 +70,12 @@ class Exp extends Component {
                                 <img className="exp" src={alg} alt=""></img>
                                 <img className="exp" src={algp} alt=""></img>
                             </Container >
-                            <Container maxWidth="md">
+                            <Container maxWidth="sm">
                             <Typography align="center" sx={{fontSize:"auto", fontWeight:"5", width:"auto"}}>
                                 I have extensive experience in developing and maintaining a microservices architecture using 
-                                the Django Framework, Redis, Celery, and Docker. This architecture enabled us to store, standardize,
-                                and display atmospheric data collected from multiple EPA/NASA sites, while also providing 
-                                researchers with asynchronous tasks to aid their work. Through organized team sprints and a timeline 
-                                based on requirements, we were able to meet project goals and deliver new features such as an SMTP 
-                                feature that reached out to over 100 researchers through Celery and Redis.
+                                the Django Framework, Redis, Celery, and Docker through organized team sprints and a timeline 
+                                based on requirements. This architecture enabled us to store, standardize,
+                                and display atmospheric data collected from multiple EPA/NASA sites. 
                             <br></br><br></br>
                                 One of my most significant achievements in this project was developing a download feature that allowed users
                                 to access over 5000 daily files from each ceilometer site. This feature was developed using Django REST 
@@ -91,14 +89,14 @@ class Exp extends Component {
                             </Container>
                         </Paper>
                         <Paper elevation={12} sx={{padding: "20px"}}>
-                            <Container maxWidth="md">
+                            <Container>
                                 <Typography variant="h2" align="center" sx={{padding:"10px"}}>
                                     Experienced with
                                 </Typography>
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
                                         OOP Languages
                                 </Typography>
-                                <Container maxWidth="md" sx={containerStyles.sx}>
+                                <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={python} alt=""></img>
                                     <img className="logo" src={r} alt=""></img>
                                     <img className="logo" src={cplus} alt=""></img>
@@ -107,7 +105,7 @@ class Exp extends Component {
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
                                         Backend
                                 </Typography>
-                                <Container maxWidth="md" sx={containerStyles.sx}>
+                                <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={django} alt=""></img>
                                     <img className="logo" src={mysql} alt=""></img>
                                     <img className="logo" src={redis} alt=""></img>
@@ -116,7 +114,7 @@ class Exp extends Component {
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
                                         Frontend
                                 </Typography>
-                                <Container maxWidth="md" sx={containerStyles.sx}>
+                                <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={html} alt=""></img>
                                     <img className="logo" src={cs} alt=""></img>
                                     <img className="logo" src={js} alt=""></img>
@@ -125,7 +123,7 @@ class Exp extends Component {
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
                                         CI/CD
                                 </Typography>
-                                <Container maxWidth="md" sx={containerStyles.sx}>
+                                <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={git} alt=""></img>
                                     <img className="logo" src={atl} alt=""></img>
                                 </Container>
