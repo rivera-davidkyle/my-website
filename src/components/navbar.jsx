@@ -1,4 +1,5 @@
-import React, { Component, useRef } from 'react'
+import React, { Component } from 'react'
+import { LinkedIn, GitHub, Email } from '@mui/icons-material';
 import '../static/css/navbar.css';
 
 class Navbar extends Component {
@@ -10,7 +11,7 @@ class Navbar extends Component {
                     <div className="image-text">
                         <div className="image-text">
                             <span className="image">
-                                <button onClick={(e) => {this.props.handler(e, "Main");this.toggleClose()}}>
+                                <button onClick={(e) => {this.props.onMainClick(e)}}>
                                     <img src={require('../static/images/logo.png')} alt=""/>
                                 </button>
                             </span>
@@ -26,19 +27,32 @@ class Navbar extends Component {
                     <div className="menu">
                         <ul className="menu-links">
                             <li className="nav-link"> 
-                                <button onClick={(e) => {this.props.handler(e, "About");this.toggleClose()}}><i className="bi bi-file-person-fill icon"></i>About</button>
+                                <button onClick={(e) => {this.props.onAboutClick(e)}}><i className="bi bi-file-person-fill icon"></i>About</button>
                             </li>
                             <li className="nav-link">
-                                <button onClick={(e) => {this.props.handler(e, "Exp");this.toggleClose()}}><i className="bi bi-box-fill icon"></i>Experience</button>
+                                <button onClick={(e) => {this.props.onExpClick(e)}}><i className="bi bi-box-fill icon"></i>Experience</button>
                             </li>
                             <li className="nav-link" >
-                                <button onClick={(e) => {this.props.handler(e, "Proj");this.toggleClose()}}><i className="bi bi-journal icon"></i>Projects</button>
+                                <button onClick={(e) => {this.props.onProjClick(e)}}><i className="bi bi-journal icon"></i>Projects</button>
                             </li>
                             <li className="nav-link" >
-                                <button onClick={(e) => {this.props.handler(e, "Contact");this.toggleClose()}}><i className="bi bi-telephone-fill icon"></i>Contact</button>
+                                <button onClick={(e) => {this.props.onContactClick(e)}}><i className="bi bi-telephone-fill icon"></i>Contact</button>
                             </li>
                             <li className="nav-link" >
                                 <a href={require('../static/others/resume.pdf')}><i className="bi bi-file-earmark-richtext icon"></i>Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="dock">
+                        <ul className="menu-links">
+                            <li className="nav-link">
+                                <a href="https://www.linkedin.com/in/david-kyle-rivera-897824173/"><i className="bi bi-linkedin icon"></i>david-kyle-rivera</a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="https://github.com/rivera-davidkyle"><i className="bi bi-github icon"></i>rivera-davidkyle</a>
+                            </li>
+                            <li className="nav-link">
+                                <a href="mailto:rivera.davidkyle@gmail.com"><i className="bi bi-envelope icon"></i>rivera.davidkyle@gmail.com</a>
                             </li>
                         </ul>
                     </div>

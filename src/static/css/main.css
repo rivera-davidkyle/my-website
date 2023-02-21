@@ -1,18 +1,10 @@
-@media (max-width: 1366px)
-{
-        .page img {
-                height: 40vw;
-                max-height: 400px;
-        }
-}
-@media (min-width: 1400px)
-{
-        .page img {
-                height: 35vw;
-                max-height: 550px;
-        }
-}
 .page img {
-        height: 30vh;
+        height: 35vh;
         max-height: 400px;
+}
+@media (max-width: 600px)
+{
+        .page img {
+                height: 25vh;
+        }
 }

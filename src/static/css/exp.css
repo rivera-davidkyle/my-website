@@ -3,9 +3,5 @@
     padding: 5px;
 }
 .page img.logo{
-    height:100px;
-    padding: 10px;
-}
-.page{
-    overflow: auto;
+    height:16.2vh;
 }

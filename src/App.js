@@ -10,49 +10,51 @@ import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme();
 
+const animStyles = {
+  sx: {
+    display :'flex',
+    justifyContent: 'center'
+  }
+}
+
 theme.typography = {
   fontFamily: ['Poppins', 'sans-serif']
 }
-theme.typography.h4 = {
-  fontSize: '2rem',
-  color: 'rgb(42, 44, 80)',
-}
-theme.typography.h3 = {
-  fontSize: '1.3rem',
-  color: 'rgb(79, 82, 131)'
-}
-
-const PAGES = {
-  "Main": <Main />,
-  "About": <About />,
-  "Exp": <Exp />,
-  "Proj": <Proj />,
-  "Contact": <Contact />
-}
 
 class App extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props);
-    this.handler = this.handler.bind(this);
-    this.state = {
-      active: "Main"
-    }
+    this.mainRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.expRef = React.createRef();
+    this.projRef = React.createRef();
+    this.contactRef = React.createRef();
   }
-  handler(e,view)
-  {
-    this.setState({active: view});
+
+  scrollToMyRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }
   render() {
     return (
       <div className ="App">
         <ThemeProvider theme={theme}>
-          <Navbar handler={this.handler}/>
-            {PAGES[this.state.active]}
+          <Navbar
+          onMainClick={() => this.scrollToMyRef(this.mainRef)}
+          onAboutClick={() => this.scrollToMyRef(this.aboutRef)}
+          onExpClick={() => this.scrollToMyRef(this.expRef)}
+          onProjClick={() => this.scrollToMyRef(this.projRef)}
+          onContactClick={() => this.scrollToMyRef(this.contactRef)} 
+          />
+         
+          <Main ref={this.mainRef}/>
+          <About ref={this.aboutRef}/>
+          <Exp ref={this.expRef}/>
+          <Proj ref={this.projRef}/>
+          <Contact ref={this.contactRef}/>
         </ThemeProvider>
       </div>  
-  );
-}
+    );
+  }
 }
 
 export default App;

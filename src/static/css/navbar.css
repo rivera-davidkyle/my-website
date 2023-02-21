@@ -168,6 +168,9 @@
   .sidebar .menu{
     margin-top: 40px;
   }
+  .sidebar .dock{
+    margin-top: 25px;
+  }
   
   .sidebar .menu-bar{
     height: calc(100% - 55px);
@@ -203,25 +206,26 @@
   
   /* Pages */
   .page{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 250px;
-    height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
     animation: fadein 0.3s;
-    overflow: hidden;
+    overflow: auto;
   }
-  
   
   .sidebar.close ~ .page{
     left: 78px;
-    height: 100vh;
     padding-left: 10px;
     width: calc(100% - 78px);
   }
 
+  .dock .nav-link{
+    height: 30px;
+    font-size: 0.70rem;
+  }
   @media (max-width: 1200px)
   {
 
@@ -238,7 +242,7 @@
         width:81px;
         height: 70px;
         border-radius: 0px 0px 10px 0px;
-        position: absolute;
+        position: fixed;
         z-index: 1;
     }
     .page{
@@ -249,14 +253,13 @@
       width: 100%;
       background-color: var(--body-color);
       transition: none;
-      overflow: scroll;
+      overflow: hidden;
       animation: fadein 0.3s;
       
       
     }
     .sidebar.close ~ .page{
       left: 0;
-      height: 100vh;
       padding: 0;
       width: 100%;
     }
