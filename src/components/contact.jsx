@@ -2,24 +2,7 @@ import React, { Component, forwardRef } from 'react';
 import { List, ListItemButton, ListItemText, Box, Typography, Divider, Container, Paper, Grid } from '@mui/material';
 import {ListItemIcon} from '@mui/material';
 import { LinkedIn, GitHub, Email } from '@mui/icons-material';
-import { keyframes } from '@emotion/react';
-
-
-const cardRoll = keyframes`
-
-0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-}
-100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-}
-
-`;
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 class Contact extends Component {
     state = {  } 
     render() { 
@@ -31,9 +14,8 @@ class Contact extends Component {
                     display:"flex",
                     justifyContent: "center",
                     alignItems:"center",
-                    animation:`${cardRoll} 0.6s cubic-bezier(0.550, 0.055, 0.675, 0.190) both`
                 }}> 
-                
+                    <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='True'>
                     <Paper elevation={12} sx={{
                         background:"rgb(42, 44, 80)", display:"block", justifyContent:"center", border:"solid rgb(129, 101, 255) 5px"
                     }}>
@@ -61,6 +43,7 @@ class Contact extends Component {
                             </ListItemButton>
                         </List>
                     </Paper>
+                    </AnimationOnScroll>
                 </Box>
             </div>
         );

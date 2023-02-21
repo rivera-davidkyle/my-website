@@ -2,30 +2,14 @@ import React, { Component, forwardRef } from 'react';
 import Typewriter from 'typewriter-effect';
 import pfp from '../static/images/pfp.png';
 import { Paper, Typography, Container, Box } from '@mui/material';
-import { keyframes } from '@emotion/react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 import '../static/css/about.css';
-
-
-const TITLES = ["Software Engineer", 
-3000,"Web Developer", 3000,"Tech Entusiast", 3000,"Lifelong Learner", 3000]
-
-const cardEffect = keyframes`
-    0% {
-        -webkit-transform: translateX(-1000px);
-                transform: translateX(-1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        opacity: 1;
-    }
-`
-
 class About extends Component {
     render() { 
         return (
         <div className="page" ref={this.props.aboutRef}>
+            <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'>
             <Box
                 sx={{
                     display: 'flex',
@@ -38,9 +22,9 @@ class About extends Component {
                         border: "inset rgb(129, 101, 255) 10px",
                         background: "rgb(42, 44, 80)",
                         color: "white",
-                        animation: `${cardEffect} 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`
                       }
                 }}>
+                
                 <Paper elevation={12} sx={{padding: "20px"}}>  
                     <Box
                     sx={{
@@ -53,7 +37,8 @@ class About extends Component {
                             fontWeight: "500",
                             fontSize: "auto",
                             color: "rgb(129, 101, 255)"
-                            }}><Typography variant="h1"
+                            }}>
+                            <Typography variant="h1"
                             sx={{
                                 textAlign:"center",
                                 fontWeight: "500",
@@ -125,6 +110,7 @@ class About extends Component {
                     </Container>
                 </Paper>
                 </Box>
+                </AnimationOnScroll>
         </div>
             );
     }

@@ -1,7 +1,6 @@
 import React, { Component, forwardRef } from 'react';
 import { List, ListItemButton, ListItemText, Box, Typography, Divider, Container, Grid } from '@mui/material';
 import { keyframes } from '@emotion/react';
-
 import django from '../static/images/django.png';
 import python from '../static/images/python.png';
 import cplus from '../static/images/cplus.png';
@@ -14,25 +13,13 @@ import jupyter from '../static/images/jupyter.png'
 import sklearn from '../static/images/sklearn.png'
 import numpy from '../static/images/numpy.png'
 import pandas from '../static/images/pandas.png'
-
 import ucn from '../static/images/ucnpage.png';
 import port from '../static/images/port.png';
 import itw from '../static/images/itw.png';
 import sort from '../static/images/sort.png';
 import '../static/css/proj.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-const listEffect = keyframes`
-0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-`;
 const listButtonStyles = 
 {
     sx: {
@@ -54,8 +41,8 @@ const centerStyle =
 {
     sx: {
         display: "flex", 
-        justifyContent: "center"
-
+        justifyContent: "center",
+        alignItems: "center"
     }
 };
 class Proj extends Component {
@@ -70,12 +57,12 @@ class Proj extends Component {
                     paddingTop: "77px",
                     flexWrap: "wrap",
                     overflow: 'hidden',
-                    maxHeight: '100%', animation:`${listEffect} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` 
+                    maxHeight: '100%'
                 }}>
                 
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} sm={6} sx={centerStyle.sx}>
-                        <div sx={centerStyle.sx}>
+                        <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce='true' style={centerStyle.sx}>
                             <ListItemButton href="https://www.ucn-portal.org/" sx={listButtonStyles.sx}>
                                 <Typography align="center" sx={{fontWeight:"50", fontSize:"auto"}}>
                                     Unified Ceilometer Network
@@ -90,15 +77,17 @@ class Proj extends Component {
                                     <img className="logol" src={cplus} alt=""></img> &nbsp;
                                     <img className="logol" src={matlab} alt=""></img> &nbsp;
                                 </Container>
+                                <Container sx={centerStyle.sx}>
                                 <Typography align="center" sx={{padding:"10px"}}>
                                 Stores, displays, and standardizes data from Ceilometer LiDAR data from multiple EPA/NASA sites.
                                 <br></br>Developed through Python, C++, Bash, and MatLab.
                                 </Typography>
+                                </Container>
                             </ListItemButton>
-                        </div>
+                        </AnimationOnScroll>
                     </Grid>
                     <Grid item xs={12} sm={6} sx={centerStyle.sx}>
-                        <div sx={centerStyle.sx}>
+                        <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce='true' style={centerStyle.sx}>
                         <ListItemButton href="https://ticketingitapp.herokuapp.com/" sx={listButtonStyles.sx}>
                             <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
                                 IT Ticketing Website
@@ -117,10 +106,10 @@ class Proj extends Component {
                             <br></br>Developed through Django Framework and Bootstrap
                             </Typography>
                         </ListItemButton>
-                        </div>
+                        </AnimationOnScroll>
                     </Grid>
                     <Grid item xs={12} sm={6} sx={centerStyle.sx}>
-                        <div sx={centerStyle.sx}>
+                        <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce='true' style={centerStyle.sx}>
                         <ListItemButton href="https://github.com/rivera-davidkyle/my-website" sx={listButtonStyles.sx}>
                             <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
                                 2022 Porfolio Website
@@ -139,10 +128,10 @@ class Proj extends Component {
                                 <br></br>Developed through React, Material UI, and CSS
                                 </Typography>
                         </ListItemButton>
-                        </div>
+                        </AnimationOnScroll>
                     </Grid>
                     <Grid item xs={12} sm={6} sx={centerStyle.sx}>
-                        <div sx={centerStyle.sx}>
+                        <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce='true' style={centerStyle.sx}>
                         <ListItemButton href="https://github.com/rivera-davidkyle/Sorting-Algorithm-Analysis/blob/main/ML/Regression%20Analysis.ipynb" sx={listButtonStyles.sx}>
                             <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
                                 Sorting Algorithm Test and Analysis
@@ -164,11 +153,10 @@ class Proj extends Component {
 
                             </Typography>
                         </ListItemButton>
-                        </div>
+                        </AnimationOnScroll>
                     </Grid>
                     
                 </Grid>
-                
                 </Box>
             </div>
         );

@@ -10,6 +10,13 @@ import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme();
 
+const animStyles = {
+  sx: {
+    display :'flex',
+    justifyContent: 'center'
+  }
+}
+
 theme.typography = {
   fontFamily: ['Poppins', 'sans-serif']
 }
@@ -25,7 +32,7 @@ class App extends Component {
   }
 
   scrollToMyRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }
   render() {
     return (
@@ -38,6 +45,7 @@ class App extends Component {
           onProjClick={() => this.scrollToMyRef(this.projRef)}
           onContactClick={() => this.scrollToMyRef(this.contactRef)} 
           />
+         
           <Main ref={this.mainRef}/>
           <About ref={this.aboutRef}/>
           <Exp ref={this.expRef}/>
