@@ -28,8 +28,8 @@ const listButtonStyles =
         justifyContent:"center", 
         border:"solid rgb(129, 101, 255) 5px", 
         m:"10px", 
-        width:"40vw",
-        height:"80vh",
+        width: "40vw",
+        height: "auto",
         color: "#ffffff",
         '@media (max-width: 600px)': {
             width:"auto",
@@ -51,9 +51,10 @@ class Proj extends Component {
             <div className="page" ref={this.props.projRef}>
                 <Box
                 sx={{
-                    display:"flex",
-                    justifyContent:"center",
-                    alignContent:"center",
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    maxHeight: "100%",
                     paddingTop: "77px",
                     flexWrap: "wrap",
                     overflow: 'hidden',
@@ -64,7 +65,7 @@ class Proj extends Component {
                     <Grid item xs={12} sm={6} sx={centerStyle.sx}>
                         <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce='true' style={centerStyle.sx}>
                             <ListItemButton href="https://www.ucn-portal.org/" sx={listButtonStyles.sx}>
-                                <Typography align="center" sx={{fontWeight:"50", fontSize:"auto"}}>
+                                <Typography variant="h2" align="center" sx={{fontWeight:"50", fontSize:"2.5vh"}}>
                                     Unified Ceilometer Network
                                 </Typography>
                 
@@ -80,6 +81,7 @@ class Proj extends Component {
                                 <Container sx={centerStyle.sx}>
                                 <Typography align="center" sx={{padding:"10px"}}>
                                 Stores, displays, and standardizes data from Ceilometer LiDAR data from multiple EPA/NASA sites.
+                                <br></br>Asynchronous standardization of uploaded raw files from ceilometers
                                 <br></br>Developed through Python, C++, Bash, and MatLab.
                                 </Typography>
                                 </Container>
@@ -124,6 +126,7 @@ class Proj extends Component {
                             </Container>
                             <Typography align="center" sx={{padding:"10px"}} >
                                 A single-page application that shows my background as a developer
+                                <br></br>It includes a scroll to component feature along with animation on scroll transitions
                                 <br></br>It is hosted through Github pages
                                 <br></br>Developed through React, Material UI, and CSS
                                 </Typography>
@@ -148,7 +151,7 @@ class Proj extends Component {
                             </Container>
                             <Typography align="center" sx={{padding:"10px"}} >
                                 Exports a CSV of runtime and memory of different sorting algorithms in varying array sizes and test cases
-                                <br></br>Analyzes the degree of sortedness through Regression Analysis
+                                <br></br>Analyzes the degree of sortedness of through Regression Analysis
                                 <br></br>Developed through C++, Jupyter Notebooks, Pandas, Scikit learn, and Numpy
 
                             </Typography>
