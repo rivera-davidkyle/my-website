@@ -18,9 +18,17 @@ import html from '../static/images/html.png';
 import cs from '../static/images/css.png';
 import r from '../static/images/r.png';
 import js from '../static/images/js.png';
+import java from '../static/images/java.png';
+import numpy from '../static/images/numpy.png';
+import sk from '../static/images/sklearn.png';
+import pandas from '../static/images/pandas.png';
+import jp from '../static/images/jupyter.png';
+
+
 
 const boxStyles = {
     sx: {display: 'flex',
+    flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     maxHeight: "100%",
@@ -94,16 +102,16 @@ class Exp extends Component {
                                     Experienced with
                                 </Typography>
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
-                                        OOP Languages
+                                        Programming Languages
                                 </Typography>
                                 <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={python} alt=""></img>
-                                    <img className="logo" src={r} alt=""></img>
+                                    <img className="logo" src={java} alt=""></img>
                                     <img className="logo" src={cplus} alt=""></img>
                                     <img className="logo" src={c} alt=""></img>
                                 </Container>
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
-                                        Backend
+                                        Backend Technologies
                                 </Typography>
                                 <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={django} alt=""></img>
@@ -112,7 +120,7 @@ class Exp extends Component {
                                     <img className="logo" src={docker} alt=""></img>
                                 </Container>
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
-                                        Frontend
+                                        Frontend Technologies
                                 </Typography>
                                 <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={html} alt=""></img>
@@ -121,11 +129,20 @@ class Exp extends Component {
                                     <img className="logo" src={reactjs} alt=""></img>
                                 </Container>
                                 <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
-                                        CI/CD
+                                        Version Control & Project Management
                                 </Typography>
                                 <Container maxWidth="sm" sx={containerStyles.sx}>
                                     <img className="logo" src={git} alt=""></img>
                                     <img className="logo" src={atl} alt=""></img>
+                                </Container>
+                                <Typography align="center" sx={{color:"rgb(129, 101, 255)", fontSize:"auto", fontWeight:"900", padding:"5px"}}>
+                                        Data Science
+                                </Typography>
+                                <Container maxWidth="sm" sx={containerStyles.sx}>
+                                    <img className="logo" src={r} alt=""></img>
+                                    <img className="logo" src={numpy} alt=""></img>
+                                    <img className="logo" src={pandas} alt=""></img>
+                                    <img className="logo" src={sk} alt=""></img>
                                 </Container>
                             </Container>
                         </Paper>

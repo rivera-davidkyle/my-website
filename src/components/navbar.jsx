@@ -46,7 +46,7 @@ class Navbar extends Component {
                     <div className="dock">
                         <ul className="menu-links">
                             <li className="nav-link">
-                                <a href="https://www.linkedin.com/in/david-kyle-rivera-897824173/"><i className="bi bi-linkedin icon"></i>david-kyle-rivera</a>
+                                <a href="https://www.linkedin.com/in/rivera-davidkyle"><i className="bi bi-linkedin icon"></i>rivera-davidkyle</a>
                             </li>
                             <li className="nav-link">
                                 <a href="https://github.com/rivera-davidkyle"><i className="bi bi-github icon"></i>rivera-davidkyle</a>

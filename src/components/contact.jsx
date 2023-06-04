@@ -23,7 +23,7 @@ class Contact extends Component {
                         Contact me!
                         </Typography>
                         <List sx={{display:"flex"}}>
-                            <ListItemButton href="https://www.linkedin.com/in/david-kyle-rivera-897824173/"
+                            <ListItemButton href="https://www.linkedin.com/in/rivera-davidkyle"
                             sx={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                                 <ListItemIcon sx={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                                     <LinkedIn sx={{fontSize: "10vh", color: "white"}}/>
