@@ -85,23 +85,11 @@ class About extends Component {
                         width:"auto"
                     }}>
                     <br></br>
-                            I am a senior majoring in Computer Science with a minor in Staistics at the University of
-                            Maryland, Baltimore County. I enjoy topics that revolve around Algorithms, Data Structures, and
-                            Data Science.  I seek out challenges to expand my skillset and knowledge, and I adapt well to new roles and environments. 
+                            I graduated in Computer Science with a minor in Staistics at the University of
+                            Maryland, Baltimore County. I seek out challenges to expand my skillset and knowledge, and I adapt well to new roles and environments. 
                             I enjoy taking on new projects that push me out of my comfort zone, and I thrive in fast-paced,
                             dynamic environments where I can apply my problem-solving skills. 
                             <br></br><br></br>
-
-
-                            I'm involved in several other activities outside of programming. As Culture Chair for the 
-                            Filipino-American Student Association, I guide the executive board and organize cultural 
-                            events. I'm also an organizer for HackUMBC, where I promote and moderate the event. 
-                            Outside of my leadership roles, I enjoy playing music, chess, and basketball.<br></br><br></br>
-                            
-
-                            Above everything else, I'm passionate about computer science 
-                            and its potential to make a positive impact on the world. 
-                            I'm looking forward to putting my skills to use and continuing to grow as a software developer. <br></br><br></br>
                     </Typography>
                     </Container>
                 </Paper>
