@@ -1,5 +1,5 @@
 import React, { Component, forwardRef } from "react";
-import { Paper, Box, Typography, Container, Grid } from "@mui/material";
+import { Paper, Box, Typography, Container } from "@mui/material";
 import "../static/css/exp.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import alg from "../static/images/alg.png";
@@ -71,119 +71,101 @@ class Exp extends Component {
     return (
       <div className="page" ref={this.props.expRef}>
         <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
-          <Grid container spacing={1}>
-            <Grid item xs={6} sx={boxStyles.sx}>
-              <Paper elevation={12} sx={{ padding: "20px" }}>
-                <Typography variant="h2" align="center">
-                  Hughes Network Systems
-                </Typography>
-                <Typography
-                  variant="h3"
-                  align="center"
-                  sx={{ color: "rgb(129, 101, 255)" }}
-                >
-                  Software Engineer
-                </Typography>
-                <Container maxWidth="md" sx={containerStyles.sx}>
-                  <img className="exp" src={alg} alt=""></img>
-                  <img className="exp" src={algp} alt=""></img>
-                </Container>
-                <Container maxWidth="sm">
-                  <Typography
-                    align="center"
-                    sx={{ fontSize: "auto", fontWeight: "5", width: "auto" }}
-                  >
-                    I have extensive experience in developing and maintaining a
-                    microservices architecture using the Django Framework,
-                    Redis, Celery, and Docker through organized team sprints and
-                    a timeline based on requirements. This architecture enabled
-                    us to store, standardize, and display atmospheric data
-                    collected from multiple EPA/NASA sites.
-                  </Typography>
-                </Container>
-              </Paper>
-              <Paper elevation={12} sx={{ padding: "20px" }}>
-                <Typography variant="h2" align="center">
-                  Atmospheric Lidar Group
-                </Typography>
-                <Typography
-                  variant="h3"
-                  align="center"
-                  sx={{ color: "rgb(129, 101, 255)" }}
-                >
-                  Software Engineer
-                </Typography>
-                <Container maxWidth="md" sx={containerStyles.sx}>
-                  <img className="exp" src={alg} alt=""></img>
-                  <img className="exp" src={algp} alt=""></img>
-                </Container>
-                <Container maxWidth="sm">
-                  <Typography
-                    align="center"
-                    sx={{ fontSize: "auto", fontWeight: "5", width: "auto" }}
-                  >
-                    I have extensive experience in developing and maintaining a
-                    microservices architecture using the Django Framework,
-                    Redis, Celery, and Docker through organized team sprints and
-                    a timeline based on requirements. This architecture enabled
-                    us to store, standardize, and display atmospheric data
-                    collected from multiple EPA/NASA sites.
-                  </Typography>
-                </Container>
-              </Paper>
-            </Grid>
-            <Grid item xs={6}>
-              <Container sx={boxStyles.sx}>
-              <Paper elevation={12} sx={{ padding: "20px" }}>
-                <Container>
-                  <Typography
-                    variant="h2"
-                    align="center"
-                    sx={{ padding: "10px" }}
-                  >
-                    Experienced with
-                  </Typography>
-                  <Typography align="center" sx={typeStyles.sx}>
-                    Programming Languages
-                  </Typography>
-                  <Container maxWidth="sm" sx={containerStyles.sx}>
-                    <img className="logo" src={python} alt=""></img>
-                    <img className="logo" src={java} alt=""></img>
-                    <img className="logo" src={cplus} alt=""></img>
-                    <img className="logo" src={c} alt=""></img>
-                  </Container>
-                  <Typography align="center" sx={typeStyles.sx}>
-                    Backend Technologies
-                  </Typography>
-                  <Container maxWidth="sm" sx={containerStyles.sx}>
-                    <img className="logo" src={django} alt=""></img>
-                    <img className="logo" src={mysql} alt=""></img>
-                    <img className="logo" src={redis} alt=""></img>
-                    <img className="logo" src={docker} alt=""></img>
-                  </Container>
-                  <Typography align="center" sx={typeStyles.sx}>
-                    Frontend Technologies
-                  </Typography>
-                  <Container maxWidth="sm" sx={containerStyles.sx}>
-                    <img className="logo" src={html} alt=""></img>
-                    <img className="logo" src={cs} alt=""></img>
-                    <img className="logo" src={js} alt=""></img>
-                    <img className="logo" src={reactjs} alt=""></img>
-                  </Container>
-                  <Typography align="center" sx={typeStyles.sx}>
-                    Developer Tools
-                  </Typography>
-                  <Container maxWidth="sm" sx={containerStyles.sx}>
-                    <img className="logo" src={git} alt=""></img>
-                    <img className="logo" src={atl} alt=""></img>
-                    <img className="logo" src={aws} alt=""></img>
-                    <img className="logo" src={linux} alt=""></img>
-                  </Container>
-                </Container>
-              </Paper>
+          <Box sx={boxStyles.sx}>
+            <Paper elevation={12} sx={{ padding: "20px" }}>
+              <Typography variant="h2" align="center">
+                Atmospheric Lidar Group
+              </Typography>
+              <Typography
+                variant="h3"
+                align="center"
+                sx={{ color: "rgb(129, 101, 255)" }}
+              >
+                Software Engineer Intern
+              </Typography>
+              <Container maxWidth="md" sx={containerStyles.sx}>
+                <img className="exp" src={alg} alt=""></img>
+                <img className="exp" src={algp} alt=""></img>
               </Container>
-            </Grid>
-          </Grid>
+              <Container maxWidth="sm">
+                <Typography
+                  align="center"
+                  sx={{ fontSize: "auto", fontWeight: "5", width: "auto" }}
+                >
+                  I have extensive experience in developing and maintaining a
+                  microservices architecture using the Django Framework, Redis,
+                  Celery, and Docker through organized team sprints and a
+                  timeline based on requirements. This architecture enabled us
+                  to store, standardize, and display atmospheric data collected
+                  from multiple EPA/NASA sites.
+                  <br></br>
+                  <br></br>
+                  One of my most significant achievements in this project was
+                  developing a download feature that allowed users to access
+                  over 5000 daily files from each ceilometer site. This feature
+                  was developed using Django REST Framework, Redis, JQuery, and
+                  Bootstrap, and required significant attention to detail to
+                  ensure that the data was efficiently delivered and maintained
+                  its integrity.
+                  <br></br>
+                  <br></br>
+                  Overall, my work with the UCN has given me a deep
+                  understanding of atmospheric science and the tools and
+                  technologies required to analyze and visualize data
+                  effectively. I am excited to continue building on this
+                  experience and expanding my skills as I work on future
+                  projects.
+                </Typography>
+              </Container>
+            </Paper>
+            <Paper elevation={12} sx={{ padding: "20px" }}>
+              <Container>
+                <Typography
+                  variant="h2"
+                  align="center"
+                  sx={{ padding: "10px" }}
+                >
+                  Experienced with
+                </Typography>
+                <Typography align="center" sx={typeStyles.sx}>
+                  Programming Languages
+                </Typography>
+                <Container maxWidth="sm" sx={containerStyles.sx}>
+                  <img className="logo" src={python} alt=""></img>
+                  <img className="logo" src={java} alt=""></img>
+                  <img className="logo" src={cplus} alt=""></img>
+                  <img className="logo" src={c} alt=""></img>
+                </Container>
+                <Typography align="center" sx={typeStyles.sx}>
+                  Backend Technologies
+                </Typography>
+                <Container maxWidth="sm" sx={containerStyles.sx}>
+                  <img className="logo" src={django} alt=""></img>
+                  <img className="logo" src={mysql} alt=""></img>
+                  <img className="logo" src={redis} alt=""></img>
+                  <img className="logo" src={docker} alt=""></img>
+                </Container>
+                <Typography align="center" sx={typeStyles.sx}>
+                  Frontend Technologies
+                </Typography>
+                <Container maxWidth="sm" sx={containerStyles.sx}>
+                  <img className="logo" src={html} alt=""></img>
+                  <img className="logo" src={cs} alt=""></img>
+                  <img className="logo" src={js} alt=""></img>
+                  <img className="logo" src={reactjs} alt=""></img>
+                </Container>
+                <Typography align="center" sx={typeStyles.sx}>
+                  Developer Tools
+                </Typography>
+                <Container maxWidth="sm" sx={containerStyles.sx}>
+                  <img className="logo" src={git} alt=""></img>
+                  <img className="logo" src={atl} alt=""></img>
+                  <img className="logo" src={aws} alt=""></img>
+                  <img className="logo" src={linux} alt=""></img>
+                </Container>
+              </Container>
+            </Paper>
+          </Box>
         </AnimationOnScroll>
       </div>
     );
